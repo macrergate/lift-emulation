@@ -40,7 +40,7 @@ public class LiftConfig {
                 movingUp = true;
                 break;
             default:
-                throw new IllegalArgumentException("wrong command: " + input.charAt(0));
+                throw new IllegalArgumentException("wrong command: " + input.charAt(0) + ". any of i, d, u, q expected.");
         }
         int targetLevel;
         try {

@@ -44,6 +44,7 @@ in this example 3rd and 4rd arguments will have default values.
 ## Interacting with the Application
 You can type following commands in the application console
 - i\<FLOORNUMBER> - push button to the specified floor inside the lift, i.e i5 
-- o\<FLOORNUMBER> - push button on the specified floor outside the lift, i.e o19
+- d\<FLOORNUMBER> - push down button on the specified floor outside the lift, i.e o19
+- u\<FLOORNUMBER> - push up button on the specified floor outside the lift, i.e o19
 - q - exit 
 
