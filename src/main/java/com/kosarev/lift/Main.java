@@ -17,8 +17,8 @@ public class Main {
                 if (input.equals("q")) {
                     break;
                 }
-                int targetLevel = liftConfig.parseTarget(input);
-                lift.submitTarget(targetLevel);
+                LiftTarget target = liftConfig.parseTarget(input);
+                lift.submitTarget(target);
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
@@ -34,5 +34,6 @@ public class Main {
     private static void init(String[] args) {
         liftConfig = new LiftConfig(args);
         lift = new Lift(liftConfig);
+        lift.start();
     }
 }
